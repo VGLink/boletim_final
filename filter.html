@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tutorial - filter()</title>
+</head>
+<body>
+  <h1> - filter()</h1>
+  <p> temos uma lista de números e queremos filtrar apenas os números maiores que 5.</p>
+
+  <pre>
+    const numeros = [2, 8, 3, 10, 5, 7, 1, 6, 4, 9];
+
+    // Usando a função filter para obter apenas os números maiores que 5
+    const numerosMaioresQue5 = numeros.filter(numero => numero > 5);
+    
+    document.write('<p>Lista original: ' + numeros.join(', ') + '</p>');
+    document.write('<p>Números maiores que 5: ' + numerosMaioresQue5.join(', ') + '</p>');
+
+  </pre>
+
+  <script src="script2.js"></script>
+  
+</body>
+</html>

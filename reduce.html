@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tutorial - reduce()</title>
+</head>
+<body>
+  <h1> - reduce()</h1>
+
+  <p>Em uma lista de números e queremos encontrar o maior número.</p>
+  <pre>
+    const numeros = [8, 3, 12, 5, 7, 1, 6, 15, 4, 9];
+
+    // Usando a função reduce para encontrar o maior número
+    const maiorNumero = numeros.reduce((max, numero) => (numero > max ? numero : max), numeros[0]);
+
+    document.write('<p>Lista de números: ' + numeros.join(', ') + '</p>');
+    document.write('<p>Maior número: ' + maiorNumero + '</p>');
+  </pre>
+
+
+  <script src="script3.js"></script>
+  
+</body>
+</html>

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Calculadora de Média VGL e outras funções</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>app web média escolar simples</h1>
+  <div class="container">
+    <h2>Calculadora de Média</h2>
+    <h2>Cadastro de Aluno</h3>
+    <label for="nomeAluno">Nome do Aluno:</label>
+    <input type="text" id="nomeAluno" placeholder="Digite o nome do aluno" required>
+    <br>
+    <label for="nota1">Nota 1:</label>
+    <input type="number" id="nota1" placeholder="Digite uma nota de 0 a 100" required>
+    <br>
+
+    <label for="nota2">Nota 2:</label>
+    <input type="number" id="nota2" placeholder="Digite uma nota de 0 a 100" required>
+    <br>
+
+    <label for="nota3">Nota 3:</label>
+    <input type="number" id="nota3" placeholder="Digite uma nota de 0 a 100" required>
+    <br>
+
+    <label for="nota4">Nota 4:</label>
+    <input type="number" id="nota4" placeholder="Digite uma nota de 0 a 100" required>
+    <br>
+
+    <button onclick="calcularMedia()">Calcular Média</button>
+    <button onclick="cadastrarAluno()">Cadastrar Aluno</button>
+
+    <p id="resultado"></p>
+    <div>
+    </div>
+    <button onclick="exibirDados()">Exibir Dados Armazenados</button>
+    <div id="dadosArmazenados"></div>
+    <a href="reduce.html" target="_blank">- reduce()</a>
+    <a href="filter.html" target="_blank">- filter()</a>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
